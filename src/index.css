@@ -147,3 +147,20 @@ color: #f2f2f2;
   width: 250px;
   border-radius: 50px;
 } */
+
+
+.fav-btn{
+  background: transparent;
+  border: none;
+  margin: 50px;
+  font-size: 51px;
+  outline: none;
+  color: grey;
+  transition: width .35s ease-in-out;
+}
+
+.fav-btn i:hover{
+  cursor: pointer;
+  transform: scale(1.25);
+
+}
