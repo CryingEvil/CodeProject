@@ -1,19 +1,18 @@
 import React from "react";
 //import Logo from "./src/images/Library.png";
 import './AppHeader.css';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import {
+//   Collapse,
+//   Navbar,
+//   NavbarToggler,
+//   NavbarBrand,
+//   Nav,
+//   NavItem,
+//   NavLink,
+//   UncontrolledDropdown,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem } from 'reactstrap';
 
 
 class AppHead extends React.Component{
@@ -32,20 +31,34 @@ class AppHead extends React.Component{
       });
     }
     render() {
-      var Logo = require('../../../src/images/Library2.png');
-      return (
-       <header>
-         <img src={Logo} alt="logo" className="logo"></img>
-         <nav>
-           <ul className="nav_links">
-             <li>nav 1</li>
-             <li>nav 2</li>
-             <li>nav 3</li>
-           </ul>
-         </nav>
-         <a href="#"><button>Contact</button></a>
-       </header>
-      );
+      return(
+        <nav className="navbar">
+          <h1>Library</h1>
+          <div className="links">
+            <a href="https://www.linkedin.com/in/erwin-purnama-6041a51a0/" tabIndex="1" target="_blank" className="app-link" >About Me</a> 
+            {/* <a href="/create" className="app-button" style={{
+              color: 'white',
+              backgroundColor: '#f1356d',
+              borderRadius: '8px'
+            }}>About Us</a> */}
+          </div>
+        </nav>
+      )
+      // var Logo = require('../../../src/images/Library2.png');
+      // return (
+      //  <header>
+      //    <img src={Logo} alt="logo" className="logo"></img>
+      //    {/* <nav>
+      //      <ul className="nav_links">
+      //        <li>nav 1</li>
+      //        <li>nav 2</li>
+      //        <li>nav 3</li>
+      //      </ul>
+      //    </nav> */}
+      //    <input className="input-group-text"></input>
+      //    <a href="#"><button>Search</button></a>
+      //  </header>
+      // );
     }
         //console.log("test");
         // return(

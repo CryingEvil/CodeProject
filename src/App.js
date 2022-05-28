@@ -1,17 +1,17 @@
 import './App.css';
 import AppBody from './pages/react-body/AppBody';
 import AppHead from './pages/react-header/AppHeader';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-        <AppHead />
-      {/* <body>
-        <AppBody />
-      </body> */}
-
-    </div>
+   <div className="App">
+     <AppHead/>
+     <div className="content">
+       <AppBody/>
+     </div>
+   </div>
+   
   );
 }
 
